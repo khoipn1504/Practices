@@ -1,2 +1,1 @@
-Hello
-I'm here
+print('love you guys')
