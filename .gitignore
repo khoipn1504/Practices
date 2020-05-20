@@ -1331,3 +1331,4 @@ venv/Scripts/pyreverse.exe
 venv/Scripts/python.exe
 venv/Scripts/pythonw.exe
 venv/Scripts/symilar.exe
+.vscode/settings.json
