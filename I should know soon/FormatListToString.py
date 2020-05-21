@@ -9,4 +9,10 @@ def namelist(names):
     else:
         return ''
 
-print(namelist(names))
+
+
+def namelist1(names):
+  return ", ".join([name["name"] for name in names])[::-1].replace(",", "& ",1)[::-1]
+
+
+print(namelist1(names))
