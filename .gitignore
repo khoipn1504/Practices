@@ -1522,3 +1522,5 @@ venv/Lib/site-packages/rope-0.17.0-py3.8.egg-info/PKG-INFO
 venv/Lib/site-packages/rope-0.17.0-py3.8.egg-info/requires.txt
 venv/Lib/site-packages/rope-0.17.0-py3.8.egg-info/SOURCES.txt
 venv/Lib/site-packages/rope-0.17.0-py3.8.egg-info/top_level.txt
+test.py
+test.py
