@@ -1,0 +1,31 @@
+'''LIST'''
+Ordered: each element has a fixed position in a list
+Iterable: you can get their elements one by one
+Able to store duplicate values
+Able to store different types of elements
+
+
+'''BOOL'''
+các giá trị tương đương với False:
+constants defined to be false: None and False,
+zero of any numeric type: 0, 0.0,
+empty sequences and containers: "", [], {}.
+
+lưu ý: 'or' và 'and' trả về 1 trong những toán hạng của nó. Không nhất thiết là kiểu BOOL
+Tuy nhiên 'not' luôn trả về kiểu bool.
+
+vd: False or 5 and 100 => 100
+    not 100 => False
+
+lưu ý 2: x and y return x nếu x false. nếu x đúng nó mới thực thi và trả về you
+    x or y return x nếu x true. nếu x sai nó sẽ thực thi và trả về y.
+    
+    Điều này còn được gọi là đoản mạch hay 'lazy'. Vì nó chỉ xét giá trị đầu tiên xem 
+    có thỏa phép toán hay chưa nếu chưa mới chạy toán hạng tiếp theo. 
+
+    giải thích thêm đối với and chỉ cần toán hạng đầu tiên là False thì cả biêu thức là false
+    đối với or cũng tương tự nếu toán hạng đầu tiên là True thì cả biểu thức là True
+    nếu thỏa điều kiện tiên quyết nó sẽ kh quan tâm phía sau có gì cho dù là error
+
+vd:True or (1/0) => True
+    False and (1/0) =>False
