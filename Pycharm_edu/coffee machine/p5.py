@@ -73,8 +73,7 @@ def buy():
                 key: material[key] - type_coffee['cappuccino'].get(key, 0) for key in material}
 
 
-def fill():
-    global material
+def fill(material):
 
     material['water'] += int(
         input("Write how many ml of water do you want to add:\n"))
@@ -87,8 +86,7 @@ def fill():
     print()
 
 
-def take():
-    global material
+def take(material):
 
     print("I gave you %i" % (material['money']))
     print()
@@ -110,9 +108,9 @@ while True:
     if action == 'buy':
         buy()
     elif action == 'fill':
-        fill()
+        fill(material)
     elif action == 'take':
-        take()
+        take(material)
     elif action == 'remaining':
         show_machine_state(**material)
     elif action == 'exit':
