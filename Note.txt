@@ -1,3 +1,20 @@
+'''PYTHON'''
+Python is a Strong and Dynamic typing.
++STRONG tying là các biến số không tự chuyển đổi ngầm định từ type này sang type khác
+khi thực hiện các phép toán.
+    vd: '150' + 5 sẽ cho ra error vì trong python muốn thực hiện phải tự chuyển '150' thành số.
++Dynamic typing là một biến có thể gán nhiều  kiểu dữ liệu khác nhau trong suốt 
+quá trình thực thi code mà không báo error.
+    vd:a=150
+        a='150' ...
+
+
+'''STRING'''
++Strings are immutable, thus all the methods that "change" them only return the 
+copy of a string with necessary changes.
++If you want to save the result of the method call for later use, you need to 
+assign this result to a variable (either the same or the one with a different name).
+
 '''LIST'''
 Ordered: each element has a fixed position in a list
 Iterable: you can get their elements one by one
@@ -29,3 +46,4 @@ lưu ý 2: x and y return x nếu x false. nếu x đúng nó mới thực thi v
 
 vd:True or (1/0) => True
     False and (1/0) =>False
+
