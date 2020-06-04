@@ -10,31 +10,33 @@ print("|", *rows[1], "|", sep=" ")
 print("|", *rows[2], "|", sep=" ")
 print("---------")
 
+while True:
+    user = input("Enter the coordinates:").split()
 
-user = input("Enter the coordinates:").split()
+    try:
+        user = [int(x) for x in user]
+    except:
+        print("You should enter numbers!")
+        continue
 
-try:
-    user = [int(x) for x in user]
-except:
-    print("You should enter numbers!")
-    continue
+    if not (1 <= user[0] <= 3 and 1 <= user[1] <= 3):
+        print("Coordinates should be from 1 to 3!")
+        continue
 
-if not (1 <= user[0] <= 3 and 1 <= user[1] <= 3):
-    print("Coordinates should be from 1 to 3!")
-    continue
+    coor = (3-user[0], user[1]-1)
 
-coor = (3-user[0], user[1]-1)
+    if rows[coor[0]][coor[1]] != "_" and rows[coor[0]][coor[1]] != " ":
+        print("This cell is occupied! Choose another one!")
+        continue
 
-if rows[coor[0]][coor[1]] != "_" and rows[coor[0]][coor[1]] != " ":
-    print("This cell is occupied! Choose another one!")
-    continue
+    rows[coor[0]][coor[1]] = "X"
+    print("---------")
+    print("|", *rows[0], "|", sep=" ")
+    print("|", *rows[1], "|", sep=" ")
+    print("|", *rows[2], "|", sep=" ")
+    print("---------")
 
-rows[coor[0]][coor[1]] = "X"
-print("---------")
-print("|", *rows[0], "|", sep=" ")
-print("|", *rows[1], "|", sep=" ")
-print("|", *rows[2], "|", sep=" ")
-print("---------")
+    break
 
 
 # x_count = len([x for x in inp if x == 'X'])
